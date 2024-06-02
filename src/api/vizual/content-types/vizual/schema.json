@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "vizuals",
+  "info": {
+    "singularName": "vizual",
+    "pluralName": "vizuals",
+    "displayName": "Vizual"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
