@@ -37,6 +37,8 @@ module.exports = ({ env }) => [
         "http://arabfest.cz",
         "http://www.arabfest.cz",
         "http://localhost:3000",
+        "https://arabfest-fe.vercel.app/",
+        "https://arabfest-fe.vercel.app",
       ], // Add your allowed origins here
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization"],
