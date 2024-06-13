@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "locations",
+  "collectionName": "accomodations",
   "info": {
-    "singularName": "location",
-    "pluralName": "locations",
-    "displayName": "Location",
+    "singularName": "accomodation",
+    "pluralName": "accomodations",
+    "displayName": "Accomodation",
     "description": ""
   },
   "options": {
@@ -25,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "website": {
+    "address": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,32 +40,36 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "picture": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "address": {
+    "website": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "info": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

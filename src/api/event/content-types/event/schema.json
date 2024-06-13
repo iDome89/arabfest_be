@@ -33,11 +33,6 @@
       },
       "type": "datetime"
     },
-    "participants": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::participant.participant"
-    },
     "speakers": {
       "type": "relation",
       "relation": "oneToMany",
