@@ -27,12 +27,19 @@ module.exports = ({ env }) => [
     },
   },
   {
-    name: 'strapi::cors',
+    name: "strapi::cors",
     config: {
       enabled: true,
-      origin: ['http://localhost:1337', 'http://localhost:3000'], // Add your allowed origins here
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization'],
+      origin: [
+        "http://localhost:1337",
+        "https://arabfest.cz",
+        "https://wwww.arabfest.cz",
+        "http://arabfest.cz",
+        "http://www.arabfest.cz",
+        "http://localhost:3000",
+      ], // Add your allowed origins here
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+      headers: ["Content-Type", "Authorization"],
       credentials: true,
     },
   },
