@@ -30,18 +30,7 @@ module.exports = ({ env }) => [
     name: "strapi::cors",
     config: {
       enabled: true,
-      origin: [
-        "http://localhost:1337",
-        "https://arabfest.cz",
-        "https://wwww.arabfest.cz",
-        "http://arabfest.cz",
-        "http://www.arabfest.cz",
-        "http://localhost:3000",
-        "https://arabfest-fe.vercel.app/",
-        "https://arabfest-fe.vercel.app",
-        "https://arabfest-fe-silk.vercel.app/",
-        "https://arabfest-fe-silk.vercel.app"
-      ], 
+      origin: "*",
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization"],
       credentials: true,
