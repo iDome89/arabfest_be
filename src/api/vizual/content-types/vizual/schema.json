@@ -4,22 +4,18 @@
   "info": {
     "singularName": "vizual",
     "pluralName": "vizuals",
-    "displayName": "Vizual"
+    "displayName": "Vizual",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "images": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+    "color": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
