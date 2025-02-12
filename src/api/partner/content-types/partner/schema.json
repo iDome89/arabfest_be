@@ -29,6 +29,11 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "is_media_partner": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }

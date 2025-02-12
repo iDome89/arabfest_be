@@ -28,6 +28,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "photographer_name": {
+      "type": "string"
+    },
+    "photographer_website": {
+      "type": "string"
     }
   }
 }
