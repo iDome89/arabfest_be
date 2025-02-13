@@ -33,11 +33,6 @@
       },
       "type": "datetime"
     },
-    "speakers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::speaker.speaker"
-    },
     "entry_price": {
       "pluginOptions": {
         "i18n": {
@@ -85,6 +80,11 @@
         "prague_event"
       ],
       "required": true
+    },
+    "speakers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::speaker.speaker"
     }
   }
 }
