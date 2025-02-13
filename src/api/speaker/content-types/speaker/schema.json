@@ -4,7 +4,8 @@
   "info": {
     "singularName": "speaker",
     "pluralName": "speakers",
-    "displayName": "Speaker"
+    "displayName": "Speaker",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,15 +16,76 @@
     }
   },
   "attributes": {
-    "speaker": {
-      "type": "component",
-      "repeatable": false,
+    "first_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": false
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "phone": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "email"
+    },
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "people.person"
+      "type": "text"
+    },
+    "website": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
