@@ -85,6 +85,14 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::speaker.speaker"
+    },
+    "goout": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
