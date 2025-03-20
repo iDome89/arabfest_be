@@ -30,6 +30,7 @@ module.exports = ({ env }) => ({
       settings: {
         defaultFrom: env('SMTP_FROM', 'your-email@gmail.com'),
         defaultReplyTo: env('SMTP_REPLY_TO', 'your-email@gmail.com'),
+        subject: "Zpráva z kontaktního formuláře",
       },
     },
   },
